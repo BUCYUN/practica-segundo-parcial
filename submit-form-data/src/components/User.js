@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Mostrar from "./Mostrar";
+import '../styles/User.css'
 
 function User () {
     const [userName, setUserName] = useState ("")
@@ -14,7 +15,7 @@ function User () {
     return (
         <div className="user">
             <div className="userName"> 
-                <p>UserName</p>
+                <p>Username:</p>
                 <input 
                 type="text" 
                 value={userName}
@@ -22,7 +23,7 @@ function User () {
                 />
             </div>
             <div className="fullName">
-                <p>FullName</p>
+                <p>FullName:</p>
                 <input 
                 type="text" 
                 value={fullName}
@@ -30,16 +31,16 @@ function User () {
                 />
             </div>
                 
-            <div>
-                <p>age</p>
+            <div className="age">
+                <p>age:</p>
                 <input 
                 type="text" 
                 value={age}
                 onChange={(e) => setAge(e.target.value)}
                 />
             </div>
-            <button className="boton" onClick={addUser}>submit</button>
-            {addUser ? <Mostrar userName={userName} fullName={fullName} Age={age}/> : null}
+            <button className="boton" onClick={addUser}>Submit</button>
+            {mostrar ? <Mostrar userName={userName} fullName={fullName} ge={age}/> : null}
             
         </div>
         

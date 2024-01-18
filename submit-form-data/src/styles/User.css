@@ -1,0 +1,15 @@
+.user  {
+    font-family:'sans-serif';
+}
+
+.userName, .fullName, .age{
+    margin: 20px auto;
+}
+
+.boton{
+    margin: 20px auto;
+    padding: 0px 5px;
+}
+ul{
+    padding: 35px;
+}
